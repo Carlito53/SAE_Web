@@ -1,0 +1,235 @@
+/* CSS toute les pages */
+
+body /* sur toute la blise body on appliquera le css suivant */
+{
+	color: black; /* applique la couleur noir */
+	font-family: Arial, sans-serif;/* applique la police Arial, sans-serif */
+}
+
+iframe { 
+    height: 56.25vw; /* met iframe au racio 16/9 */
+}
+
+/* CSS index.html */
+
+.index { /* on défini l'attribut index */
+    background: url(img_css/fond_code_index.png) no-repeat center fixed; /* met en fond l'image img_css/fond_code_index.png centré et sans répétition de l'image et sans mouvement*/
+    background-size: cover; /* agandit l'image de manière a ce que sa largeur couvre toute la page */
+}
+
+
+/* CSS presentation.html */
+
+.presentation { 
+    background: url(img_css/fond_code_presentation.jpg) no-repeat center fixed; 
+    background-size: cover; /* agandit l'image de manière a ce que sa largeur couvre toute la page */
+}
+
+li[id^="Special_event_in_my_life"] {  /*applique le css a la balise li avec l'id Evenement_particulier_dans_ma_vie */
+    padding-top: 50px; /* espace entre le contenu et la bordure en haut de l'élément de 50px*/
+    position: relative;
+    top: -50px; /* permet de définir le top 50px au dessus (-50px) */
+    margin-bottom: -50px; /* espace entre la bordure basse d'un élément et la bordure haute de l'élément adjacent */
+} /* plus grobalement cette partie de css permet que lorsque grace a un bouton, lien... on retourne a la balise de cette id il remonte automatiquement 50px au dessus de celle ci*/
+    
+li[id^="Why_IT"] {
+    padding-top: 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+    
+li[id^="Why_STI2D_SIN"] {
+    padding-top: 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+    
+li[id^="My_future_plans"] {
+    padding-top: 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+    
+li[id^="My_personality"] {
+    padding-top: 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+/* CSS my_town.html */
+
+.my_town { 
+    background: url(img_css/st_germain.jpg) no-repeat center fixed; 
+    background-size: cover; /* agandit l'image de manière a ce que sa largeur couvre toute la page */
+}
+
+/* CSS books.html */
+
+.books { 
+    background: url(img_css/fond_livre.jpg) no-repeat center fixed; /* met en fond l'image img_css/fond_code_presentation.jpg centré et sans répétition de l'image et sans mouvement*/
+    background-size: cover; /* agandit l'image de manière a ce que sa largeur couvre toute la page */
+}
+
+
+/* CSS movies.html */
+
+.movies { 
+    background: url(img_css/fond_film.jpg) no-repeat center fixed; /* met en fond l'image centré et sans répétition de l'image et sans mouvement*/
+    background-size: cover; /* agandit l'image de manière a ce que sa largeur couvre toute la page */
+}
+
+
+/* CSS liens.html */
+
+.links { 
+    background: url(img_css/fond_code_liens.jpg) no-repeat center fixed; /* met en fond l'image centré et sans répétition de l'image et sans mouvement*/
+    background-size: cover; /* agandit l'image de manière a ce que sa largeur couvre toute la page */
+}
+
+
+/* CSS fin.html */
+
+.iut { 
+    background: url(img_css/IUT_Velizy.jpg) no-repeat center fixed; /* met en fond centré et sans répétition de l'image et sans mouvement*/
+    background-size: cover; /* agandit l'image de manière a ce que sa largeur couvre toute la page */
+}
+
+
+/* CSS issue du fichier css https://www.w3schools.com/w3css/4/w3.css */
+
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+footer,header{display:block}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+
+img{border-style:none}
+
+img{vertical-align:middle} /* aligne le milieu de l'élément avec la hauteur donnée par la ligne de base de l'élément parent à laquelle on ajoute la moitié de sa hauteur */
+a{color:inherit} /* forcer l'héritage */
+
+.w3-center{text-align:center!important}
+.w3-top{ /* fixe en haut de la page html */
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0;
+}
+
+.w3-bottom{ /* fixe en bas de la page html */
+    position:fixed;
+    width:100%;
+    z-index:1;
+    bottom:0;
+}
+
+.w3-bar{
+    width:100%;
+    overflow:hidden /* Le contenu est rogné si besoin pour s'inscrire dans le padding et aucune barre de défilement n'est affichée. */
+}
+
+.w3-btn,.w3-button{ /* Un bouton rectangulaire avec un effet de survol gris */
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+
+.w3-center .w3-bar{ /* Sélectionne toutes les déclaration w3-bar situées à l'intérieur des déclarations w3-center */
+    display:inline-block; /* permet de définir une largeur et une hauteur sur l'élément, les marges / marges supérieures et inférieures sont respectées, n'ajoute pas de saut de ligne après l'élément de sorte que l'élément peut être placé à côté d'autres éléments */
+    width:auto
+}
+.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+
+.w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
+
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+
+.w3-bar .w3-dropdown-hover{ /* Sélectionne toutes les déclaration w3-dropdown-hover situées à l'intérieur des déclarations w3-bar */
+    position:static;
+    float:left
+}
+.w3-bar .w3-button{white-space:normal}
+
+.w3-dropdown-hover:hover .w3-dropdown-content{display:block}
+.w3-dropdown-content{
+    cursor:auto;
+    color:#000;
+    background-color:#fff;
+    display:none;
+    position:absolute;
+    min-width:160px;
+    margin:0;
+    padding:0;
+    z-index:1
+}
+.w3-container:after,.w3-container:before,.w3-row:after,.w3-row:before,.w3-row-padding:after{
+    content:"";
+    display:table;
+    clear:both
+}
+
+
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
+
+.w3-bar .w3-button{white-space:normal}
+
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+
+.w3-bar-block .w3-bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;outline:0
+}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center} /* aligne le texte */
+
+.w3-block{
+    display:block; /* Affiche un élément en tant qu'élément de bloc (comme <p>). Il commence sur une nouvelle ligne, et occupe toute la largeur */
+    width:100%
+}
+
+.w3-container,.w3-panel{padding:0.01em 16px}
+.w3-col{float:left;width:100%}
+
+.w3-small{font-size:12px!important} /* met le text a 12px */
+.w3-medium{font-size:15px!important} /* met le text a 15px */
+.w3-large{font-size:18px!important} /* met le text a 18px */
+.w3-left{float:left!important} /* met l'element a gauche */
+.w3-right{float:right!important} /* met l'élément a droite */
+
+
+/* Couleurs */
+
+/* Couleurs de fond */
+/* en cas de conflit entre 2 déclaration sur un meme élement !important permet de donner la priorité a cette déclaration */
+.w3-black{color:#fff!important;background-color:#000!important} /* couleur blanche avec fond noir */
+.w3-white{color:#000!important;background-color:#fff!important} /* couleur noir avec fond blanc */
+
+/* Couleur de text */
+.w3-text-white{color:#fff!important} /* met la couleur en blanc */
+.w3-text-black{color:#000!important} /* met la couleur en noir*/
